@@ -68,23 +68,26 @@
                 </div>
             </div>
             <div class="" id="formFixed">
-                <h2 class="text-center">Cadastre-se,​</h2>
-                <p class="text-center">gere o código e inclua o exame de <strong>bioimpedância</strong> na sua primeira consulta!</p>
-                <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
+                <h2 class="text-center" id="tituloForm">Cadastre-se,​</h2>
+                <p class="text-center" id="descriptionForm">gere o código e inclua o exame de <strong>bioimpedância</strong> na sua primeira consulta!</p>
+                <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST">
                     <div class="row">
                         <div class="col-12">
-                            <label for="name">Nome</label>
-                            <input class="form-control form-control-md" id="name" type="text" data-sb-validations="required,name" />
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                    <div class="row" id="bloc-form">
+                        <div class="col-12">
+                            <label for="nome">Nome</label>
+                            <input class="form-control form-control-md" id="nome" type="text" name="nome" />
                         </div>
                         <div class="col-12">
                             <label for="email">E-mail</label>
-                            <input class="form-control form-control-md" id="email" type="email" data-sb-validations="required,email" />
-                            <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                            <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
+                            <input class="form-control form-control-md" id="email" type="email" name="email" />
                         </div>
                         <div class="col-12">
                             <label for="telefone">Telefone</label>
-                            <input class="form-control form-control-md" id="telefone" type="text" data-sb-validations="required,telefone" />
+                            <input class="form-control form-control-md" id="telefone" type="text" name="telefone" />
                         </div>
                         <div class="col-12">
                             <p id="collapseText">
@@ -99,24 +102,14 @@
                               </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            <p>To activate this form, sign up at</p>
-                            <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <div id="boxBtGerarCodigo">
-                        <button class="btn btn-primary btn-lg" id="submitButton" type="submit">GERAR CÓDIGO</button>
+                        <input class="btn btn-primary btn-lg" id="submitButton" value="GERAR CÓDIGO" type="submit" >
+                    </div>
+                    <div class="codigoCadLP d-none">
+                        <p class="codCad">BIOEJR21</p>
+                        <p class="txt">Fale com a gente através do whatsapp ou Instagram:​</p>
+                        <p class="wts"><a href="https://wa.me/5511972632233" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> AGENDAR CONSULTA</a></p>
+                        <p class="inst"><a target="_blank" href="https://www.instagram.com/dr.edivaldojunior/" style="color: #ffffff;"><i class="fa fa-instagram" aria-hidden="true"></i> Dr.Edivaldo Junior</a></p>
                     </div>
                 </form>
             </div>
@@ -253,11 +246,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
