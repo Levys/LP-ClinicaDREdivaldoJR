@@ -11454,6 +11454,7 @@ header.masthead h1, header.masthead .h1 {
 .bg-emagrecimento .showcase-text p {
   color: #fff;
   text-align: justify;
+  font-size: 14px;
 }
 .bg-emagrecimento .showcase-img {
   min-height: 30rem;
@@ -11485,6 +11486,9 @@ header.masthead h1, header.masthead .h1 {
     margin-right: 5px;
     background: url('../assets/img/icon-emagrecimento.png') center center no-repeat;
     background-size: 100%;
+  }
+  .bg-emagrecimento .showcase-text p{
+    font-size: 1.25rem;
   }
 }
 .bg-medicina-esporte {
@@ -11522,6 +11526,7 @@ header.masthead h1, header.masthead .h1 {
   color: #fff;
   text-align: justify;
   line-height: 1.8;
+  font-size: 14px;
 }
 .bg-medicina-esporte .showcase-img {
   min-height: 30rem;
@@ -11564,6 +11569,7 @@ header.masthead h1, header.masthead .h1 {
     color: #fff;
     text-align: justify;
     line-height: 1.8;
+    font-size: 1.25rem;
   }  
   .bg-medicina-esporte .box-video-click{
     width: 834px;
@@ -11607,7 +11613,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: justify;
 }
 .bg-depoimentos .box-depoimentos{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: #fff;
   display: block;
@@ -11615,39 +11621,41 @@ header.masthead h1, header.masthead .h1 {
   width: 100%;
 }
 .bg-depoimentos .box-depoimentos:nth-child(1){
-  background: url('../assets/img/balao-1.png') left bottom no-repeat;
+  background: url('../assets/img/balao-1-mobile.png') left bottom no-repeat;
   background-size: 100%;
   padding: 20px 20px 0;
-  height: 110px;
+  min-height: 135px;
+  max-height: 197px;
 }
 .bg-depoimentos .box-depoimentos:nth-child(1) .text-end{
   margin-top: -20px;
 }
 .bg-depoimentos .box-depoimentos:nth-child(2){
-  background: url('../assets/img/balao-2.png') left bottom no-repeat;
+  background: url('../assets/img/balao-2-mobile.png') left bottom no-repeat;
   background-size: 100%;
   padding: 25px 20px 0 10px;
-  height: 120px;
+  min-height: 145px;
+  max-height: 200px;
 }
 .bg-depoimentos .box-depoimentos:nth-child(2) .text-end{
-  margin-top: -25px;
+  margin-top: -35px;
 }
 .bg-depoimentos .box-depoimentos:nth-child(3){
-  background: url('../assets/img/balao-3.png') left bottom no-repeat;
+  background: url('../assets/img/balao-3-mobile.png') left bottom no-repeat;
   background-size: 100%;
-  font-size: 11px;
-  padding: 20px 10px 0 15px;
-  height: 120px;
+  padding: 35px 20px 0 20px;
+  min-height: 230px;
+  max-height: 320px;
 }
 .bg-depoimentos .box-depoimentos:nth-child(3) .text-end{
-  margin-top: -25px;
+  margin-top: -15px;
 }
 .bg-depoimentos .box-depoimentos:nth-child(4){
-  background: url('../assets/img/balao-4.png') left bottom no-repeat;
+  background: url('../assets/img/balao-4-mobile.png') left bottom no-repeat;
   background-size: 100%;
-  font-size: 10px;
   padding: 35px 15px 0 10px;
-  height: 110px;
+  min-height: 180px;
+  max-height: 248px;
 }
 .bg-depoimentos .box-depoimentos:nth-child(4) .text-end{
   margin-top: -30px;
@@ -11682,6 +11690,7 @@ header.masthead h1, header.masthead .h1 {
     background: url('../assets/img/balao-1.png') left bottom no-repeat;
     background-size: 100%;
     width: 807px;
+    max-height: 238px;
     height: 238px;
     padding: 40px 40px 20px 50px;
     margin-left: 18%;
@@ -11692,6 +11701,7 @@ header.masthead h1, header.masthead .h1 {
     background-size: 100%;
     width: 807px;
     height: 242px;
+    max-height: 242px;
     padding: 40px 50px 20px 40px;
     font-size: 24px;
     margin-left: 8%;
@@ -11841,8 +11851,19 @@ header.masthead h1, header.masthead .h1 {
   float: right;
 }
 @media (max-width: 768px) {
+  #copyright p{
+    text-align: center;
+  }
   #footer a.credits {
-    display: none;
+    display: block;
+    width: 30%;
+    margin: 10px auto 0;
+    clear: both;
+    float: initial;
+    height: 40px;
+  }
+  #footer-social{
+    text-align: center;
   }
 }
 #footer .marg{
@@ -11865,6 +11886,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 768px) {
   #formFixed{
+    display: block;
     background: #fff;
     border-radius: 25px;
     padding: 30px;
@@ -11889,12 +11911,13 @@ header.masthead h1, header.masthead .h1 {
   #formFixed h2 {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 39px;
+    font-size: 29px;
     margin-bottom: 0;
     letter-spacing: 1px;
   }
   #formFixed p{
-    font-size: 25px;
+    font-size: 20px;
+    padding: 0 10px;
     font-weight: 400;
     line-height: 29px;
   }
@@ -11946,5 +11969,41 @@ header.masthead h1, header.masthead .h1 {
   }
   #collapseText a::after{
     transform: rotate(90deg);
+  }
+
+  .codCad{
+    border:1px dotted #29af8a!important;
+    text-align: center!important;
+    color: #29af8a!important;
+    font-weight: 600 !important;
+    padding: 20px !important;
+    font-size: 55px !important;
+    margin: 20px 0;
+  }
+  .inst,
+  .wts,
+  .txt{
+    /* font-size: 20px !important; */
+    text-align: center!important;
+  }
+  .wts{
+    margin-top: 20px;
+    background: #29af8a;
+    border-radius: 6px;
+    padding: 15px!important;
+    color: #fff !important;
+  }
+  .wts a{
+    text-decoration: none;
+    color: #fff !important;
+  }
+  .inst{
+    border-radius: 6px;
+    padding: 15px!important;
+    color: #225972 !important;
+  }
+  .inst a{
+    text-decoration: none;
+    color: #225972 !important;
   }
 }
