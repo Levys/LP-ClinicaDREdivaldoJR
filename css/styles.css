@@ -11344,14 +11344,44 @@ header.masthead h1, header.masthead .h1 {
   -webkit-box-shadow: 3px 3px 20px 0px rgba(0,0,0,0.3); 
   box-shadow: 3px 3px 20px 0px rgba(0,0,0,0.3);
 }
+.box-services-top:hover{
+  cursor: pointer;
+  background-color: #225972;
+}
 .box-services-top p{
   color: #225972;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 500;
   margin-bottom: 0;
 }
-
+.box-services-top:hover p{
+  color: #fff;
+}
+.box-services-top .img-icon{
+  background: url(../assets/img/icon-emagrecimento-1.png) 0 0 no-repeat;
+  width: 90px;
+  height: 91px;
+  display: block;
+  margin: auto;
+}
+.box-services-top .img-icon2{
+  background: url(../assets/img/icon-medicina-do-esporte-1.png) 0 0 no-repeat;
+  width: 90px;
+  height: 91px;
+  display: block;
+  margin: auto;
+}
+.box-services-top:hover .img-icon{
+  background: url(../assets/img/icon-emagrecimento.png) 0 0 no-repeat;
+}
+.box-services-top:hover .img-icon2{
+  background: url(../assets/img/icon-medicina-do-esporte.png) 0 0 no-repeat;
+}
+.link-anchor{
+  text-decoration: none;
+  display: block;
+}
 @media (min-width: 768px) {
   .box-services-top{
     margin-bottom: -130px;
@@ -11376,7 +11406,7 @@ header.masthead h1, header.masthead .h1 {
   }  
 }
 .showcase {
-  background: url('../assets/img/bg-foto-dr-edivaldojr-mobile.jpg') left 50px no-repeat;
+  background: url('../assets/img/bg-foto-dr-edivaldojr-mobile.jpg') -40px 50px no-repeat;
   background-size: cover;
   padding: 70px 0 50px;
 }
@@ -11389,12 +11419,12 @@ header.masthead h1, header.masthead .h1 {
   color: #225972;
   margin-bottom: 25px;
   margin-top: 50px;
-  font-size: 39px;
-  letter-spacing: 1.5px;
+  font-size: 25px;
+  letter-spacing: 1.2px;
 }
 .showcase .showcase-text h2 small{
   color: #225972;
-  font-size: 27px;
+  font-size: 17px;
   letter-spacing: 1px;
 }
 .showcase .showcase-text p{
@@ -11434,7 +11464,7 @@ header.masthead h1, header.masthead .h1 {
 .bg-emagrecimento .showcase-text h2{
   color: #fff;
   margin-bottom: 25px;
-  font-size: 35px;
+  font-size: 25px;
   text-align: left;
   position: relative;
   padding-left: 70px;
@@ -11502,7 +11532,7 @@ header.masthead h1, header.masthead .h1 {
 .bg-medicina-esporte .showcase-text h2{
   color: #fff;
   margin-bottom: 25px;
-  font-size: 35px;
+  font-size: 25px;
   text-align: left;
   position: relative;
   padding-left: 70px;
@@ -11583,13 +11613,13 @@ header.masthead h1, header.masthead .h1 {
   background-size: cover;
 }
 .bg-depoimentos .showcase-text {
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: justify;
 }
 .bg-depoimentos .showcase-text h2{
   color: #fff;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
   position: relative;
   padding-left: 70px;
@@ -11613,7 +11643,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: justify;
 }
 .bg-depoimentos .box-depoimentos{
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: #fff;
   display: block;
@@ -11623,7 +11653,7 @@ header.masthead h1, header.masthead .h1 {
 .bg-depoimentos .box-depoimentos:nth-child(1){
   background: url('../assets/img/balao-1-mobile.png') left bottom no-repeat;
   background-size: 100%;
-  padding: 20px 20px 0;
+  padding: 40px 20px 0;
   min-height: 135px;
   max-height: 197px;
 }
@@ -11633,7 +11663,7 @@ header.masthead h1, header.masthead .h1 {
 .bg-depoimentos .box-depoimentos:nth-child(2){
   background: url('../assets/img/balao-2-mobile.png') left bottom no-repeat;
   background-size: 100%;
-  padding: 25px 20px 0 10px;
+  padding: 45px 20px 0 10px;
   min-height: 145px;
   max-height: 200px;
 }
@@ -11643,17 +11673,17 @@ header.masthead h1, header.masthead .h1 {
 .bg-depoimentos .box-depoimentos:nth-child(3){
   background: url('../assets/img/balao-3-mobile.png') left bottom no-repeat;
   background-size: 100%;
-  padding: 35px 20px 0 20px;
+  padding: 65px 20px 0 20px;
   min-height: 230px;
   max-height: 320px;
 }
 .bg-depoimentos .box-depoimentos:nth-child(3) .text-end{
-  margin-top: -15px;
+  margin-top: -25px;
 }
 .bg-depoimentos .box-depoimentos:nth-child(4){
   background: url('../assets/img/balao-4-mobile.png') left bottom no-repeat;
   background-size: 100%;
-  padding: 35px 15px 0 10px;
+  padding: 55px 15px 0 10px;
   min-height: 180px;
   max-height: 248px;
 }
@@ -11771,12 +11801,17 @@ header.masthead h1, header.masthead .h1 {
 }
 .footer #footer-inner-bottom{
   background: #3d3d3d;
-  padding: 15px 0;
+  padding: 15px 0 100px;
+}
+@media (min-width: 768px) {
+  .footer #footer-inner-bottom{
+    padding: 15px 0;
+  }  
 }
 #footer a.credits {
   color: rgba(181, 181, 181, 0) !important;
   text-shadow: none;
-  background-image: url("../assets/img/md_rodape_p.png");
+  background-image: url("../assets/img/logo-moa.png");
   background-repeat: no-repeat;
   background-size: 85%;
   background-position-x: center;
@@ -11840,9 +11875,9 @@ header.masthead h1, header.masthead .h1 {
   color: rgba(181, 181, 181, 0) !important;
   margin-top: -15px;
   text-shadow: none;
-  background-image: url("../assets/img/md_rodape_p.png");
+  background-image: url("../assets/img/logo-moa.png");
   background-repeat: no-repeat;
-  background-size: 85%;
+  background-size: 100%;
   background-position-x: center;
   opacity: 0.4;
   height: auto;
@@ -11868,21 +11903,189 @@ header.masthead h1, header.masthead .h1 {
 }
 #footer .marg{
   color: #e8e8e8;
-  font-size: 20px;
+  font-size: 15px;
 }
 #footer .marg:nth-child(2){
   padding-top: 5%;
 }
 #footer .marg a {
-  font-size: 20px;
+  font-size: 15px;
   color: #FCFCFC;
   text-decoration: none;
 }
 #footer .marg a:hover{
   color: #1daf8a;
 }
+@media (min-width: 768px) {
+  #footer .marg,
+  #footer .marg a {
+    font-size: 25px;
+  }
+}
 #formFixed{
   display: none;
+  background: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  padding-bottom: 80px;
+  width: 25%;
+  max-height: 100vh;
+  position: absolute;
+  top: 550px;
+  right: 2%;
+  box-shadow: 3px 3px 20px 0px rgba(0,0,0,0.3);
+}
+#formFixed #bt-fechar-mobile{
+  display: none;
+}
+.posRelative{
+  position: relative;
+}
+#formFixed.formFloat{
+  background: #fff;
+  z-index: 100;
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+}
+#formFixed.formFloat #bt-fechar-mobile{
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  font-size: 12px;
+  color: #225972;
+}
+#formFixed.formFloat #bt-fechar-mobile::before{
+  content: 'x';
+  border: 1px solid #225972;
+  border-radius: 50%;
+  font-size: 14px;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  line-height: 0.8;
+  width: 16px;
+  height: 17px;
+  text-align: center;
+}
+#formFixed.formFloat h2,
+#formFixed.formFloat p,
+#formFixed.formFloat label{
+  color: #225972;
+}
+#formFixed.formFloat h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 29px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+#formFixed.formFloat p{
+  font-size: 20px;
+  padding: 0 10px;
+  font-weight: 400;
+  line-height: 29px;
+}
+#formFixed.formFloat label{
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+#formFixed.formFloat #boxBtGerarCodigo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#formFixed.formFloat #boxBtGerarCodigo .btn-primary {
+  width: 100%;
+  border-radius: 0;
+}
+#formFixed.formFloat #collapseText {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+#formFixed.formFloat #collapseText a{
+  color: #225972;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+#formFixed.formFloat #collapseText a:hover{
+  text-decoration:underline;
+}
+#formFixed.formFloat #collapseText a::after,
+#formFixed.formFloat #collapseText a.collapsed::after{
+  content: ">";
+  position: absolute;
+  transform: rotate(0deg);
+  transition: all 2ms;
+  top: -4px;
+  right: -15px;
+  color: #225972;
+  display: block;
+}
+#formFixed.formFloat #collapseText a::after{
+  transform: rotate(90deg);
+}
+
+.codCad{
+  border:1px dotted #29af8a!important;
+  text-align: center!important;
+  color: #29af8a!important;
+  font-weight: 600 !important;
+  padding: 20px !important;
+  font-size: 55px !important;
+  margin: 20px 0;
+}
+.inst,
+.wts,
+.txt{
+  /* font-size: 20px !important; */
+  text-align: center!important;
+}
+.wts{
+  margin-top: 20px;
+  background: #29af8a;
+  border-radius: 6px;
+  padding: 15px!important;
+  color: #fff !important;
+}
+.wts a{
+  text-decoration: none;
+  color: #fff !important;
+}
+.inst{
+  border-radius: 6px;
+  padding: 15px!important;
+  color: #225972 !important;
+}
+.inst a{
+  text-decoration: none;
+  color: #225972 !important;
+}
+.bt-form-float {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  display: none;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.bt-form-float.active{
+  display: flex;
 }
 @media (min-width: 768px) {
   #formFixed{

@@ -1,27 +1,19 @@
-<?php
+<?php 
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
 
-include_once 'conexao.php';
-
-$nome = $_POST["nome"];
-$email = $_POST["email"];
-$telefone = $_POST["telefone"];
-
-
-$cont_insert = false;
-
-foreach ($titulos as $titulo) {
-    $result_aula = "INSERT INTO aulas (titulo) VALUES (:titulo)";
-
-    $insert_aula = $conn->prepare($result_aula);
-    $insert_aula->bindParam(':titulo', $titulo);
-    if ($insert_aula->execute()) {
-        $cont_insert = true;
-    } else {
-        $cont_insert = false;
-    }
+if (!($nome) || !($email) || !($telefone)){
+	print "Preencha todos os campos!"; exit();
 }
-if ($cont_insert) {
-    echo "<p style='color:green;'>Cadastrado com Sucesso</p>";
-} else {
-    echo "<p style='color:red;'>Erro ao cadastrar</p>";
-}
+//Abrindo Conexao com o banco de dados
+$conexao = mysqli_connect("localhost", "root", "", "teste_bd_moa") or die (mysqli_error());
+
+//Utilizando o  mysql_real_escape_string voce se protege o seu código contra SQL Injection.
+$nome = mysqli_real_escape_string($conexao, $nome);
+$email = mysqli_real_escape_string($conexao, $email);
+$telefone = mysqli_real_escape_string($conexao, $telefone);
+
+$insert = mysqli_query($conexao, "INSERT INTO contacts_msgs (nome,email,telefone) VALUES ('{$nome}','{$email}','{$telefone}')");
+mysqli_close($conexao);
+?>

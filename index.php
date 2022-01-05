@@ -20,13 +20,13 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <div class="col-4"></div>
-                <div class="col">
+                <div class="col-2 col-md-4"></div>
+                <div class="col-8 col-md-4">
                     <a class="navbar-brand" href="#!">
                         <img class="img-fluid" src="assets/img/marca_horizontal.png" alt="marca Clinica Dr. Edivaldo Jr." title="Clinica Dr. Edivaldo Jr.">
                     </a>
                 </div>
-                <div class="col-4"></div>
+                <div class="col-2 col-md-4"></div>
             </div>
         </nav>
         <!-- Masthead-->
@@ -42,15 +42,19 @@
                 <div class="row justify-content-md-center">
                     <div class="col box-services-top">
                         <div class="text-center text-white">
-                            <img class="img-fluid" src="assets/img/icon-emagrecimento.jpg" alt="Emagrecimento e obesidade">
-                            <p>Emagrecimento e obesidade</p>
+                            <a href="#bg-emagrecimento" rel="" class="link-anchor">
+                                <span class="img-icon"></span>
+                                <p>Emagrecimento e obesidade</p>
+                            </a>
                         </div>
                     </div>
                     <!-- <div class="col-md-auto ms-3 me-3"></div> -->
                     <div class="col box-services-top">
                         <div class="text-center text-white">
-                            <img class="img-fluid" src="assets/img/icon-emagrecimento.jpg" alt="Emagrecimento e obesidade">
-                            <p>Medicina do <br>esporte</p>
+                            <a href="#bg-medicina-esporte" rel="" class="link-anchor">
+                            <span class="img-icon2"></span>
+                                <p>Medicina do <br>esporte</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -68,9 +72,12 @@
                 </div>
             </div>
             <div class="" id="formFixed">
+                <div class="posRelative">
+                    <span id="bt-fechar-mobile">Fechar</span>
+                </div>
                 <h2 class="text-center" id="tituloForm">Cadastre-se,​</h2>
                 <p class="text-center" id="descriptionForm">gere o código e inclua o exame de <strong>bioimpedância</strong> na sua primeira consulta!</p>
-                <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST">
+                <form class="form-subscribe" id="contactForm"  method="post">
                     <div class="row">
                         <div class="col-12">
                             <span id="msg"></span>
@@ -79,15 +86,15 @@
                     <div class="row" id="bloc-form">
                         <div class="col-12">
                             <label for="nome">Nome</label>
-                            <input class="form-control form-control-md" id="nome" type="text" name="nome" />
+                            <input class="form-control form-control-md" type="text" name="nome" id="nome" required>
                         </div>
                         <div class="col-12">
                             <label for="email">E-mail</label>
-                            <input class="form-control form-control-md" id="email" type="email" name="email" />
+                            <input class="form-control form-control-md" type="email" name="email" id="email" required>
                         </div>
                         <div class="col-12">
                             <label for="telefone">Telefone</label>
-                            <input class="form-control form-control-md" id="telefone" type="text" name="telefone" />
+                            <input class="form-control form-control-md" type="text" name="telefone" id="telefone" required>
                         </div>
                         <div class="col-12">
                             <p id="collapseText">
@@ -103,7 +110,7 @@
                         </div>
                     </div>
                     <div id="boxBtGerarCodigo">
-                        <input class="btn btn-primary btn-lg" id="submitButton" value="GERAR CÓDIGO" type="submit" >
+                        <input class="btn btn-primary btn-lg" id="enviar" value="GERAR CÓDIGO" type="submit">
                     </div>
                     <div class="codigoCadLP d-none">
                         <p class="codCad">BIOEJR21</p>
@@ -114,7 +121,7 @@
                 </form>
             </div>
         </section>
-        <section class="bg-emagrecimento">
+        <section class="bg-emagrecimento" id="bg-emagrecimento">
             <div class="container-fluid">
                 <div class="row g-0">
                     <div class="col-lg-8 my-auto showcase-text">
@@ -131,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-medicina-esporte">
+        <section class="bg-medicina-esporte" id="bg-medicina-esporte">
             <div class="container-fluid">
                 <div class="row g-0">
                     <div class="col-lg-12 my-auto showcase-text">
@@ -225,7 +232,7 @@
                     <div id="copyright" style="color: #ffffff;">
                         <p>
                             © Copyright 2021. Todos os direitos reservados. | <span class="doctor-info">Dr. Edivaldo Rodrigues dos Santos Junior | CRM-SP: 90.127</span>
-                            <a class="credits" href="https://medicinadireta.com.br" target="_blank" title="Desenvolvido por: Medicina Direta" alt="Desenvolvido por: Medicina Direta">Desenvolvido por: Medicina Direta</a>
+                            <a class="credits" href="https://www.instagram.com/moa.marketing/" target="_blank" title="Desenvolvido por: MOA Marketing Optimization Agency" alt="Desenvolvido por: MOA Marketing Optimization Agency">Desenvolvido por: MOA Marketing Optimization Agency</a>
                         </p>
                     </div>
                 </div>
@@ -241,6 +248,9 @@
                 </div>
             </div>
         </footer>
+        <div class="bt-form-float">
+            <a type="button" class="btn btn-primary btn-lg" id="bt-form-fixed">CADASTRE-SE</a>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
